@@ -12,10 +12,6 @@ setwd("C:/Users/Matt/Documents/Rprojects/scrape_yelp_rvest")
 
 # look up the review you want to scrape and change the reviewers sort to by date / either newest or oldest
 
-url <- "https://www.yelp.com/biz/ruby-memorial-hospital-morgantown?osq=ruby+memorial&sort_by=date_desc"
-
-page <- read_html(url)
-
 df_final <- list()
 
 pageNums <- page |> 
